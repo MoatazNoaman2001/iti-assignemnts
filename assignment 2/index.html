@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal webpage of Moataz showcasing profile, social media, and contact details.">
+    <meta name="keywords" content="Moataz Kayad Hamdy, profile, social media, contact, Egypt, IT">
+    <meta name="author" content="Moataz Kayad Hamdy">
+    <title>Moataz Kayad Hamdy - Profile</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        }
+        h4, h3 {
+            margin: 0;
+        }
+
+        /* Header */
+        .top_header {
+            background: url("resources/header_logo.png");
+            background-size: contain;
+            color: white;
+            text-align: center;
+        }
+        .top_header h3 {
+            padding: 20px 0;
+        }
+        .bottom_header {
+            background-color: darkkhaki;
+            padding: 15px;
+            text-align: center;
+        }
+        .bottom_header a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .bottom_header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main layout */
+        .body_middle {
+            display: flex;
+            height: 70%;
+            padding: 20px;
+        }
+        #td1, #td2, #td3 {
+            padding: 10px;
+        }
+        #td1 {
+            background-color: darkorange;
+            flex: 1;
+        }
+        #td2 {
+            background-color: white;
+            flex: 2;
+        }
+        #td3 {
+            background-color: lightcoral;
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Register form */
+        #register_form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        #register_form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        #register_form input[type="email"],
+        #register_form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        #register_form input[type="submit"] {
+            background-color: darkorange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #register_form input[type="submit"]:hover {
+            background-color: orange;
+        }
+
+        /* Social links */
+        #social_div img {
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        #social_div img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Media iframe */
+        #media_div iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        /* Profile info */
+        #profile_title {
+            color: brown;
+            text-align: center;
+        }
+        #ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #ul li {
+            margin: 15px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: darkkhaki;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .body_middle {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr class="top_header">
+                <th colspan="3">
+                    <h3 id="web_site_title">Website Logo</h3>
+                </th>
+            </tr>
+            <tr>
+                <th class="bottom_header" colspan="3">
+                    <a href="#">Home</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">About</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="body_middle">
+               <td id="td1"> 
+                <div id="register_div">
+                    <form id="register_form">
+                        <label for="femail">Email</label>
+                        <input type="email" name="femail" id="femail" placeholder="Enter your email" required><br/>
+                        <label for="fpassword">Password</label>
+                        <input type="password" name="fpassword" id="fpassword" placeholder="Enter your password" required><br/>
+                        <input type="submit" name="submit" value="Submit" id="submit">
+                        <p>Don't have an account? <a href="registration.html" id="signup_link">Sign Up</a></p>
+                    </form>
+                </div>
+
+                <div id="social_div">
+                    <br/>
+                    <h4>My Social Profile</h4>
+                    <br/>
+                    <a href="https://www.facebook.com/moataz.noaman.3/" target="_blank"><img src="resources/facebook.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="resources/twitter.png" alt="Twitter" style="width: 30px; height: 30px;"></a>
+                    <a href="https://www.linkedin.com/in/moataz-noaman-02196222a/" target="_blank"><img src="resources/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+                </div>
+
+                <div id="media_div">
+                    <iframe src="https://www.youtube.com/embed/WbNNESIxJnY?si=QYDqIejNvdJV8Zy_" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+               </td>
+
+               <td id="td2">   
+                <br/>
+                <h3 id="profile_title">My Profile</h3>
+                <ul id="ul">
+                    <li>Name: Moataz Kayad Hamdy</li>
+                    <li>Age: 23</li>
+                    <li>Address: Egypt, Assuit</li>
+                    <li>Phone: +201098518194</li>
+                    <li>Faculty: Computer Science and Information Technologies</li>
+                    <li>Hobbies:
+                        <ol type="i">
+                            <li>Football</li>
+                            <li>Chess</li>
+                        </ol>
+                    </li>
+                    <li>Email: <a href="mailto:moataz.noaman12@gmail.com">Send me Email</a></li>
+                </ul>
+               </td>
+
+               <td id="td3">
+                <div>
+                    <img src="resources/cute_image.jpg" alt="Cute Image" width="80%" height="80%">
+                </div>
+                <div>News</div>
+               </td>
+            </tr>
+        </tbody>
+        <tfoot>
+           <tr>
+            <td colspan="3">
+                <footer>
+                    <a href="#top">Go to Top</a><br/>
+                    <p>Copyrights © are reserved to ITI.</p>
+                </footer>
+            </td>
+           </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
