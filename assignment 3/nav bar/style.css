@@ -1,0 +1,40 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    display: inline;
+    float: left;
+    padding: 8px;
+    margin: 0px;
+    color: aliceblue;
+}
+#content #title{
+    border: 1px solid black;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+li:hover{
+    background-color: #111;
+}
+
+#content p{
+    padding: 0px 10px;
+    font-size: 20px;
+    display: block
+    ;
+}
+
+.images{
+    background-repeat: repeat;
+}
+.images img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}

@@ -1,0 +1,41 @@
+
+
+/* .div1{
+    background-color: #ae232300;
+    border-left: 12px red;
+    width: 50%;
+    height: 50px;
+} */
+
+.container div:first-child{
+    background-color: #b77d7d;
+    border-left: 8px solid red;
+    padding: 8px 6px;
+    width: 50%;
+    margin: 10px 0px;
+    height: 40px;
+}
+.container div:nth-child(2){
+    background-color: #a2e9a4;
+    border-left: 8px solid rgb(0, 255, 8);
+    padding: 8px 6px;
+    width: 50%;
+    margin: 10px 0px;
+    height: 40px;
+}
+.container div:nth-child(3){
+    background-color: #7d9eb7;
+    border-left: 8px solid rgb(0, 94, 255);
+    padding: 8px 6px;   
+    width: 50%;
+    margin: 10px 0px;
+    height: 40px;
+}
+.container div:nth-child(4){
+    background-color: #b2b77d;
+    border-left: 8px solid rgb(212, 255, 0);
+    padding: 8px 6px;
+    width: 50%;
+    margin: 10px 0px;
+    height: 40px;
+}
