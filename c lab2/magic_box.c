@@ -13,6 +13,6 @@ int main() {
     gotoxy(10, 5);
     printf("MagicBox");
 
-    gotoxy(0, 0); // Reset position
+    gotoxy(0, 0);
     return 0;
 }
