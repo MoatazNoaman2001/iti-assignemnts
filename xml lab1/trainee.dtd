@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Trainees (Trainee+)>
+<!ELEMENT Trainee (Name, Age, Address, Phone*, Group, Results)>
+
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+
+<!ELEMENT Address (Governorate, Street, ZipCode)>
+<!ELEMENT Governorate (#PCDATA)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT ZipCode (#PCDATA)>
+
+<!ELEMENT Phone (#PCDATA)>
+
+<!ELEMENT Group (#PCDATA)>
+<!ATTLIST Group value (1 | 2) #REQUIRED>
+
+<!ELEMENT Results (CourseResult*)>
+<!ELEMENT CourseResult (CourseName)>
+<!ELEMENT CourseName (#PCDATA)>
+<!ATTLIST CourseResult Grade (A | B | C | D | E) #REQUIRED>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Trainees SYSTEM "trainee.dtd">
+<Trainees>
+    <Trainee>
+        <Name>Ahmed Ali</Name>
+        <Age>23</Age>
+        <Address>
+            <Governorate>Assiut</Governorate>
+            <Street>El Nil Street</Street>
+            <ZipCode>71111</ZipCode>
+        </Address>
+        <Phone>01012345678</Phone>
+        <Phone>01234567890</Phone>
+        <Group value="1">Group 1</Group>
+        <Results>
+            <CourseResult Grade="A">
+                <CourseName>XML Basics</CourseName>
+            </CourseResult>
+            <CourseResult Grade="A">
+                <CourseName>Web Development</CourseName>
+            </CourseResult>
+        </Results>
+    </Trainee>
+    
+    <Trainee>
+        <Name>Sara Mahmoud</Name>
+        <Age>21</Age>
+        <Address>
+            <Governorate>Sohag</Governorate>
+            <Street>El Huria Street</Street>
+            <ZipCode>82511</ZipCode>
+        </Address>
+        <Phone>01198765432</Phone>
+        <Group value="2">Group 2</Group>
+        <Results>
+            <CourseResult Grade="A">
+                <CourseName>Java Programming</CourseName>
+            </CourseResult>
+            <CourseResult Grade="A">
+                <CourseName>Database Design</CourseName>
+            </CourseResult>
+        </Results>
+    </Trainee>
+</Trainees>
