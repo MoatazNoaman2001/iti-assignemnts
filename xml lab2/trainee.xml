@@ -1,45 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TraineeAffairs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="trainee.xsd">
-    <Trainees>
-        <Trainee>
-            <Name>Ahmed Ali</Name>
-            <Age>23</Age>
-            <Address>
-                <Governorate>Assiut</Governorate>
-                <Street>El Nil Street</Street>
-                <ZipCode>71111</ZipCode>
-            </Address>
-            <Phone>01012345678</Phone>
-            <Phone>01234567890</Phone>
-            <Group value="1">Group 1</Group>
-            <Results>
-                <CourseResult Grade="A">
-                    <CourseName>XML Basics</CourseName>
-                </CourseResult>
-                <CourseResult Grade="A">
-                    <CourseName>Web Development</CourseName>
-                </CourseResult>
-            </Results>
-        </Trainee>
-        
-        <Trainee>
-            <Name>Sara Mahmoud</Name>
-            <Age>21</Age>
-            <Address>
-                <Governorate>Sohag</Governorate>
-                <Street>El Huria Street</Street>
-                <ZipCode>82511</ZipCode>
-            </Address>
-            <Phone>01198765432</Phone>
-            <Group value="2">Group 2</Group>
-            <Results>
-                <CourseResult Grade="A">
-                    <CourseName>Java Programming</CourseName>
-                </CourseResult>
-                <CourseResult Grade="A">
-                    <CourseName>Database Design</CourseName>
-                </CourseResult>
-            </Results>
-        </Trainee>
-    </Trainees>
+	<Trainee Name="basma" Age="23" Group="group1">
+		<Address Governorate="Minia" Street="el nahda st" ZipCode="61111"/>
+		<Phone>1234567</Phone>
+		<Phone>0100784</Phone>
+		<CourseResult CourseName="xml" TraineeGrade="B"/>
+	</Trainee>
+	<Trainee Group="group1" Age="22" Name="Ahmed">
+		<Address Governorate="Assuit" Street="Helaly" ZipCode="71111"/>
+		<CourseResult TraineeGrade="B" CourseName="C#"/>
+	</Trainee>
 </TraineeAffairs>

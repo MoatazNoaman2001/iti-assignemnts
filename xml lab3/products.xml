@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<products merchant="emailaholic">
+<product id="0">
+<name>Ultra Word Processor</name>
+<description>More words per minute than
+the competition.</description>
+<price>$799.99</price>
+</product>
+<product id="1">
+<name>Super Calculator</name>
+<description>Cheap and reliable with power saving.</description>
+<price>$5.99</price>
+</product>
+<product id="2">
+<name>Safest Safe</name>
+<description>Choose the authentic Safest Safe.</description>
+<price>$1,999.00</price>
+</product>
+</products>

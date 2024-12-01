@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+
+<Projects>
+
+  <Project id="X1" owner="E2">
+
+    <Name>Enter the Tuple Space</Name>
+
+    <Category>Video Games</Category>
+
+  </Project>
+
+  <Project id="X2" owner="E1">
+
+    <Name>Cryptic Code</Name>
+
+    <Category>Puzzles</Category>
+
+  </Project>
+
+  <Project id="X3" owner="E5">
+
+    <Name>XQuery Bandit</Name>
+
+    <Category>Video Games</Category>
+
+  </Project>
+
+  <Project id="X4" owner="E3">
+
+    <Name>Micropoly</Name>
+
+    <Category>Board Games</Category>
+
+  </Project>
+
+</Projects>
