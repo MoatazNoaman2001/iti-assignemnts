@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "string": "c",
-        "sql.h": "c"
+        "sql.h": "c",
+        "windows.ai.machinelearning.native.h": "c",
+        "cmath": "c",
+        "cstdlib": "c",
+        "xlocinfo": "c",
+        "stdio.h": "c"
     }
 }

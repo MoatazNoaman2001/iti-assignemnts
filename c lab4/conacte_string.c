@@ -79,12 +79,12 @@ void menu(){
                 SetColor(15);
             }
             printf("%s" , menu[i]);
+ }
+        printf("\n");
+        printf("\n");
+        printf("\n");
+        printf("\n");
         }
-        printf("\n");
-        printf("\n");
-        printf("\n");
-        printf("\n");
-            }
         }
         else {
             switch(input) {
@@ -131,8 +131,7 @@ void menu(){
         printf("\n");
         }
        
-    }
-    while ((input = getch()) != 27); 
+    }while ((input = getch()) != 27); 
 }
 int main(){
     // concateName();
