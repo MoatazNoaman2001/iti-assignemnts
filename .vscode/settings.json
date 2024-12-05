@@ -6,6 +6,8 @@
         "cmath": "c",
         "cstdlib": "c",
         "xlocinfo": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "math.h": "c",
+        "stdlib.h": "c"
     }
 }
