@@ -29,7 +29,7 @@ int main(){
         printf("line(%i): ", i);
         scanf("%i %i %i %i", &l[i].p1.x, &l[i].p1.y, &l[i].p2.x, &l[i].p2.y);
     }
-        for (int i =0; i< size; i++){
+    for (int i =0; i< size; i++){
         printf("line(%i) dist: %0.1lf\n", i, distance(l[i].p1.x, l[i].p1.y, l[i].p2.x, l[i].p2.y));
     }
 }

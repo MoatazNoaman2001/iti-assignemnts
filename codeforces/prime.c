@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<math.h>
 
-int is_prime(int n) {
+int is_prime(long long n) {
     if (n <= 1) {
         return 0;
     }
