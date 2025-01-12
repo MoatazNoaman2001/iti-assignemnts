@@ -1,0 +1,55 @@
+// 1: onkeydown
+// triggered when a key is pressed.
+document.addEventListener('keydown', (event) => {
+    console.log('Key pressed:', event.key);
+});
+
+// 2: onkeyup
+// triggered when a key is released.
+document.addEventListener('keyup', (event) => {
+    console.log('Key released:', event.key);
+});
+
+// 3: onchange
+// triggered when value of input changes and loses focus.
+const dropdown = document.getElementById('dropdown');
+dropdown.addEventListener('change', () => {
+    console.log('Selected value:', dropdown.value);
+});
+
+// 4: ondblclick
+// happens on double click.
+document.getElementById('doubleClickButton').addEventListener('dblclick', () => {
+    console.log('Button double-clicked!');
+});
+
+// 5: onwheel
+// happens when mouse wheel is scrolled.
+document.addEventListener('wheel', (event) => {
+    console.log('Mouse wheel scrolled:', event.deltaY);
+});
+
+// 6: onscroll
+// happens when user scrolls the page.
+window.addEventListener('scroll', () => {
+    console.log('Page scrolled!');
+});
+
+// 7: onmouseenter
+// happens when mouse enters an element.
+document.getElementById('hoverBox').addEventListener('mouseenter', () => {
+    console.log('Mouse entered the box!');
+});
+
+// 8: onmouseleave
+// happens when mouse leaves an element.
+document.getElementById('hoverBox').addEventListener('mouseleave', () => {
+    console.log('Mouse left the box!');
+});
+
+// 9: oninput
+// triggered when input value changes.
+const inputField = document.getElementById('inputText');
+inputField.addEventListener('input', () => {
+    console.log('Current input value:', inputField.value);
+});

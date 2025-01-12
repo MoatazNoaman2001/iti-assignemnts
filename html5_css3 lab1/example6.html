@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tags and Attributes</title>
+</head>
+<body>
+    <h1>HTML5 Input Tags and Attributes Demo</h1>
+
+    <!-- Input with Datalist -->
+    <label for="browser">Choose a browser:</label>
+    <input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+        <option value="Safari">
+        <option value="Opera">
+    </datalist>
+    <br><br>
+
+    <!-- Input Type File -->
+    <label for="file-upload">Upload a file:</label>
+
+    <input type="file" id="file-upload" name="file-upload" accept="image/*">
+    <br><br>
+
+    <!-- Input Type Image -->
+    <label for="image-button">Submit using an image:</label>
+    <input type="image" id="image-button" src="https://via.placeholder.com/100" alt="Submit Image" width="100" height="100">
+    <br><br>
+
+    <!-- Details and Summary -->
+    <details>
+        <summary>Click to see more details</summary>
+        <p>This is some additional information revealed when you click the summary.</p>
+    </details>
+    <br>
+
+    <!-- Input Type Color -->
+    <label for="color">Choose a color:</label>
+    <input type="color" id="color" name="color" value="#ff0000">
+    <br><br>
+
+    <!-- Input Type Range -->
+    <label for="range">Select a range (0 to 100):</label>
+    <input type="range" id="range" name="range" min="0" max="100" value="50">
+    <br><br>
+
+    <!-- Input Type Date -->
+    <label for="date">Pick a date:</label>
+    <input type="date" id="date" name="date">
+    <br><br>
+
+    <!-- Input Type Time -->
+    <label for="time">Pick a time:</label>
+    <input type="time" id="time" name="time">
+    <br><br>
+
+    <!-- Input Type Number -->
+    <label for="number">Enter a number (1 to 10):</label>
+    <input type="number" id="number" name="number" min="1" max="10">
+    <br><br>
+
+    <!-- Input Type Month -->
+    <label for="month">Pick a month:</label>
+    <input type="month" id="month" name="month">
+    <br><br>
+
+    <!-- Input Type Week -->
+    <label for="week">Pick a week:</label>
+    <input type="week" id="week" name="week">
+    <br><br>
+</body>
+</html>

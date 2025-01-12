@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip of the day</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 50px;
+        }
+        #tipContainer {
+            margin-top: 50px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>JavaScript Tip of the Day</h1>
+    <div id="tipContainer"></div>
+    <button type="button" id="dateBtn">Current Date And Time</button>
+    <h4 id="currentDate"></h4>
+    <br>
+    <h1>Enter the Date of Today</h1>
+    <button onclick="showDate()">Show Date</button>
+    <h4 id="enteredDate"></h4>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <script>
+        const userName = localStorage.getItem('userName');
+
+        if (userName) {
+            document.write(`<h1>Welcome, ${userName}!</h1>`);
+        } else {
+            document.write('<h1>Welcome, Guest!</h1>');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header style="height: 160px; background-color: blanchedalmond;">
+    </header>
+    <div class="main_container" style="margin-top:8px;display: flex;">
+        <nav style="width: 29%;height: 400px; background-color: rgb(104, 90, 71);">
+            <ol style="list-style: none; margin: 0px;">
+                <li style="margin: 0px;list-style: none;">
+                    <p>English</p>
+                    <meter value="70" max="100"></meter>
+                </li>
+                
+                <li style="margin: 0px;list-style: none;">
+                    <p>Arabic</p>
+                    <meter value="98" max="100"></meter>
+                </li>
+                <li style="margin: 0px;list-style: none;">
+                    <p>Spanch</p>
+                    <meter value="60" max="100"></meter>
+                </li>
+            </ol>
+        </nav>
+
+        <main style="width: 50%;height: 400px;">
+            <section class="first_container" style="width: 100%;height:33%; background-color: rgb(77, 56, 31); display: block;">
+                
+            </section>
+            <section class="second_container" style="width: 100%;height: 33%;background-color: rgb(117, 85, 46); display: block;">
+                
+            </section>
+            <section class="third_container" style="width: 100%;height: 34%; background-color: rgb(202, 148, 81); display: block;">
+                
+            </section>
+        </main>
+
+        <aside style="width: 20%;height: 400px; background-color: rgb(149, 141, 131);">
+            <form style="margin: 14px;">
+                <time datetime="2001-07-22 00:00:00" id="typed_date_time">22 jul 2001</time>
+            </form>
+
+            <div style="margin: 14px;">
+                <audio src="وَحَرَامٌ عَلَى قَرْيَةٍ أَهْلَكْنَاهَا أَنَّهُمْ(MP3_160K).mp3" id="audio_src"></audio>
+
+                <div class="controllers">
+                    <input type="button" value="play" id="play_c">
+                    <input type="button" value="stop" id="stop_c">
+                </div>
+            </div>
+
+            <div class="cotainer_for_drop" id="dropzone"  style=" height: 140px;background-color:rgb(103, 80, 80);border: 4px solid red; width: 100%;"></div>
+            <div class="imgs" style="display: inline-flex;">
+                <img src="Container-1.png" id="img1" alt="img" width="90px" height="90px">
+                <img src="Container-2.png" id="img2" alt="img" width="90px" height="90px">
+            </div>
+
+        </aside>
+        
+    </div>
+    <footer style="height: 160px; background-color: rgb(48, 36, 18);">
+    </footer>
+    <script>
+        var typed_date_time = document.getElementById("typed_date_time");
+        var player = document.getElementById("audio_src");
+        var play_c = document.getElementById("play_c");
+        var stop_c = document.getElementById("stop_c");
+
+        stop_c.onclick = function(){
+            player.pause()
+        }
+        play_c.onclick = function(){
+            player.play()
+        }
+
+        var selectedImg;
+
+        const dropzone = document.getElementById("dropzone");
+        const img1 = document.getElementById("img1");
+        const img2 = document.getElementById("img2");
+
+        img1.ondrag = function(){
+            selectedImg = img1;
+        }
+        img2.ondrag = function(){
+            selectedImg = img2;
+        }
+
+        dropzone.addEventListener("dragover", (event) => {
+            event.preventDefault()
+            dropzone.style.backgroundColor = "rgb(80, 103, 80)";
+        });
+
+        dropzone.addEventListener("dragleave", () => {
+            dropzone.style.backgroundColor = "rgb(103, 80, 80)";
+        });
+
+        dropzone.addEventListener("drop", (event) => {
+            event.preventDefault();
+            dropzone.style.backgroundColor = "rgb(103, 80, 80)";
+        
+            dropzone.appendChild(selectedImg)
+            const files = event.dataTransfer.files;
+            if (files.length > 0) {
+                alert(`You dropped ${files.length} file(s): ${files[0].name}`);
+            }
+        });
+    </script>
+
+</body>
+</html>

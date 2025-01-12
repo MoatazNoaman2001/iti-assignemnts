@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+.top-container{
+    background-color: #F8F9FB;
+}
+.container{
+    max-width: 1200px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 14px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #272D37;   
+}
+
+ol{
+    list-style: none;
+}
+
+.navbar .container{
+    display:flex;
+}
+.navbar .select-menu ol {
+    display: flex;
+    justify-content: stretch;
+    gap: 16px;
+}
+
+.navbar ol {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar ol li {
+    display: inline-block;
+}
+
+.navbar ol li a {
+    display: block;
+    padding: 12px 20px;
+}
+
+.logo-img{
+    margin-top: 14px;
+}
+.sign-up{
+    width: 80px; 
+    height: 40px; 
+    border-radius: 8px;
+    margin: 14px;
+    background:none; 
+    border:none;  
+    color: #437EF7;
+}
+
+.sign-up:hover{
+    background-color: #BBB;
+}
+.login{
+    width: 80px; 
+    height: 40px; 
+    border-radius: 8px;
+    margin: 14px 14px 14px 0px;
+    background-color: #437EF7;
+    color: #fff;
+}
+
+.board{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding-top: 90px;
+}
+
+.board .top-title h5{
+    font-size: 14px;
+    color: #437EF7;
+}
+
+.blogs{
+    display: inline-flex;
+    padding: 60px 100px;
+}
+
+.blogs h3{
+    
+    margin-left: 14px;
+    margin-right: 18px;
+}
+.blogs p{
+    margin-left: 14px;
+    margin-right: 18px;
+    font-size: 14px;
+    color: #5F6D7E;
+}
+.blog-item .date-blog{
+    margin-top: 8px;
+}
+.blogs .right-list .blog-item{
+    display: inline-flex;
+
+}
+
+.subscrition {
+    width: 100%;
+    background-color: #2B63D9;
+    color: #fff;
+    padding: 44px ;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.subscrition .sub-title {
+    width: 50%;
+    margin-left: 50px;
+}
+.subscrition h2{
+    margin-bottom: 14px;
+}
+
+.sub-email-input-container{
+    width: 50%;
+    align-content: center;
+    margin-right: 80px;
+    padding: 0px 250px;
+}
+
+.newsletter-container {
+    text-align: center;
+  }
+  .input-container {
+    width: 300px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+  }
+  input[type="email"] {
+    flex: 1;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #555;
+  }
+  input[type="email"]::placeholder {
+    color: #aaa;
+  }
+  button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .description {
+    margin-top: 7px;
+    font-size: 10px;
+    color: #fff;
+  }
+
+.latest-blog{
+    margin-top: 38px;
+    margin-bottom: 38px;
+    margin-left: 55px;
+    margin-right: 55px;
+    text-align: center;
+}
+
+.blog-hirozantal-list{
+    margin-top: 28px;
+}
+
+.blog-hirozantal-list .date-latest-blog-item{
+    color: #5F6D7E;
+    font-size: 12px;
+}
+.blog-hirozantal-list ol {
+    list-style: none;
+    display: inline-flex;
+}
+.blog-hirozantal-list ol li{
+    text-align: start;
+    margin-left: 28px;
+}
+.blog-hirozantal-list h4{
+    margin-right: 14px;
+    width: 390px;
+}
+.blog-hirozantal-list .learn-more{
+    font-size: 14px;
+    color: #437EF7;
+}
+
+.sign-up-container{
+    background-color: #2B63D9;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    height: 318px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+}
+
+.sign-up-container h2{
+    width: 500px;
+}
+
+.sign-up-container .sign-up-container-button{
+    margin-top: 60px;
+    background-color: #fff;
+    color:#437EF7;
+    font-size: 15px;
+    font-family: 'Inter';
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.footer{
+    height: 492px;
+    background-color: #151B28;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+.footer .feed-back-container{
+    width: 25%;
+}
+.footer .feed-back-container .input-email-footer{
+    width: 300px;
+    display: inline-flex;
+    overflow: hidden;
+    background-color: white;
+}
+input[type=email]{
+    display: inline-flex;
+    height: 46px;   
+    width: 309px;
+}
+.footer p{
+    color: #A5ACBA;
+}
