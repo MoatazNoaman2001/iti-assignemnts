@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="draw-conatainer">
+        <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid black; display: block; margin: 0 auto;">
+
+            <circle cx="150" cy="150" r="100" fill="#ffcc99" />
+            
+            <circle cx="110" cy="120" r="10" fill="white" />
+            <circle cx="110" cy="120" r="5" fill="black" class="interactive-part" data-name="Left Eye" />
+    
+            <circle cx="190" cy="120" r="10" fill="white" />
+            <circle cx="190" cy="120" r="5" fill="black" class="interactive-part" data-name="Right Eye" />
+            
+            <ellipse cx="150" cy="150" rx="8" ry="15" fill="brown"  onmouseover="starthovernose(this)" onmouseout="endhovernose(this)" class="interactive-part" data-name="Nose" />
+            
+            <ellipse cx="150" cy="190" rx="40" ry="10" fill="red" onmouseover="starthovermouth(this)" onmouseout="endhovermouth(this)" class="interactive-part" data-name="Mouth" />
+        </svg>
+
+        <canvas width="300" height="300" id="faceCanvas" style="border: 1px solid black; display: block; margin: 20px auto;" onmouseenter="canvamouseenter(this)" onmouseout="canvamouseout(this)" />
+    </div>
+    
+</body>
+</html>

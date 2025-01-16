@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+.login-container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+label, input[type="text"],  input[type="password"], input[type="button"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+input, button {
+    padding: 8px;
+    font-size: 1em;
+}
