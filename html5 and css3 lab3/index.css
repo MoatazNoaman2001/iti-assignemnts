@@ -1,0 +1,103 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  font-size: 50px;
+  background-image: linear-gradient(red, blue, green);
+  font-weight: bold;
+  transform: rotate(90deg);
+  transform-origin: center;
+  width: 60vh;
+  height: 30vh;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-horezintal-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-horezintal-list ul{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+}
+.image-horezintal-list ul li {
+    margin: 0px 15px;
+}
+.image-horezintal-list ul img:hover{
+    transform: scale(1.2 , 1.2);
+}
+.image-horezintal-list ul img{
+    display: block;
+    width: auto;
+    height: 120px;
+    object-fit: cover;
+    text-align: center;
+    padding: 16px;
+}
+.multi-column-p{
+    column-count: 3;
+    column-gap: 40px;
+    padding: 20px;
+    column-rule: 2px solid blue;
+    column-rule-color: green;
+    column-fill: red;
+}
+.car{
+    animation: moveCar 5s linear infinite;
+    position: absolute;
+    height: 80px;
+    width: auto;
+}
+
+@keyframes moveCar {
+    0%{
+        left: -150px;
+    }   
+    100%{
+        left: 100vw;
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+nav{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+nav ul{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+    justify-content: center;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: none;
+}
+
+nav ul li:hover {
+    background-color: beige;
+}
