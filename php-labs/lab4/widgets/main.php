@@ -82,16 +82,8 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
         implode(", " ,$entries),
         FILE_APPEND
     );
-    
 
-    $_SESSION['name'] = $name;
-    $_SESSION['email'] = $email;
-    $_SESSION['password'] = $password;
-    $_SESSION['room_n'] = $room_n;
-    $_SESSION['ext'] = $ext;
-
-
-    if (empty($errors)) {
+    if (empty($errors) && insertCustomer($name, $email, $password, $room_n, $ext, $image)) {
         header("Location: pages/users_list.php");
         exit();
     }
